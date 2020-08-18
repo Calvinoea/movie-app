@@ -6,10 +6,23 @@
  <title>Movie App</title>
  <link rel="stylesheet" href="/css/main.css">
  <script src="https://kit.fontawesome.com/dcc95333f3.js" crossorigin="anonymous"></script>
+
+<style>
+ /* input{
+  margin-left:80vw;
+ }
+
+ .fa-search{
+   margin-left: 81vw;
+    margin-top: 1vh;
+ } */
+
+</style>
+
 </head>
 <body class="font-sans bg-gray-900 text-white">
 <nav class="border-b border-gray-800">
-   <div class="container mx-auto flex items-center justify-between px-4 py-6"></div>
+   <div class="container mx-auto flex items-center justify-between px-4 py-6">
        <ul class="flex items-center">
           <li>
              <a href="#" class=" flex">
@@ -30,14 +43,22 @@
 
         <div class="flex items-center">
             <div class="relative">
-              <input type="text" class="bg-gray-800 rounded-full w-64 px-4 py-1 focus:outline-none focus:shadow-outline" placeholder="search">
-
+              <input type="text" class="-pt-20 -mt-10 bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline text-small" placeholder="...search">
+               <div class="absolute top-0">
+                   <i class="fas fa-search w-3 h-2 fill-current text-gray-500"></i>
+               </div>
             </div>
+
           </div>
+    </div>
 
 </nav>
 
 @yield('content')
 
+
+
 </body>
+
+
 </html>
